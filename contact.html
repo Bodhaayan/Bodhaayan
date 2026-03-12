@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Bodhaayan</title>
+<meta name="description" content="Get in touch with Bodhaayan — for students, scientists, donors, and institutional partners."/>
+<link rel="canonical" href="https://bodhaayan.org/contact.html"/>
+<link rel="icon" href="assets/favicon.ico"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="nav-ph"></div>
+
+<section class="ph">
+  <div class="ph-inner">
+    <span class="label" style="color:var(--accent);">Reach Out</span>
+    <h1>Get in Touch</h1>
+    <p>Whether you are a student, scientist, donor, or institution — we want to hear from you. We respond to every message within 7 days.</p>
+  </div>
+</section>
+
+<section class="bg-cr">
+  <div class="wrap">
+    <div class="g2" style="gap:5rem;align-items:start;">
+
+      <!-- INFO -->
+      <div class="reveal">
+        <h3>We're here for every enquiry</h3>
+        <p class="mt2" style="font-size:.95rem;">Use the form or reach out directly by email. For research or institutional enquiries, mention it in your subject line.</p>
+        <div class="fcol gap3 mt4">
+          <div class="flex gap2 as">
+            <div style="width:44px;height:44px;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:var(--sh-sm);flex-shrink:0;">✉️</div>
+            <div><div style="font-size:.68rem;font-weight:600;color:var(--g400);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem;">General</div><a href="mailto:hello@bodhaayan.org" style="font-size:.95rem;font-weight:500;color:var(--navy);">hello@bodhaayan.org</a></div>
+          </div>
+          <div class="flex gap2 as">
+            <div style="width:44px;height:44px;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:var(--sh-sm);flex-shrink:0;">🔬</div>
+            <div><div style="font-size:.68rem;font-weight:600;color:var(--g400);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem;">Research &amp; Mentorship</div><a href="mailto:research@bodhaayan.org" style="font-size:.95rem;font-weight:500;color:var(--navy);">research@bodhaayan.org</a></div>
+          </div>
+          <div class="flex gap2 as">
+            <div style="width:44px;height:44px;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:var(--sh-sm);flex-shrink:0;">🎓</div>
+            <div><div style="font-size:.68rem;font-weight:600;color:var(--g400);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem;">Student Applications</div><a href="mailto:students@bodhaayan.org" style="font-size:.95rem;font-weight:500;color:var(--navy);">students@bodhaayan.org</a></div>
+          </div>
+          <div class="flex gap2 as">
+            <div style="width:44px;height:44px;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:var(--sh-sm);flex-shrink:0;">💰</div>
+            <div><div style="font-size:.68rem;font-weight:600;color:var(--g400);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem;">Donations &amp; Partnerships</div><a href="mailto:partners@bodhaayan.org" style="font-size:.95rem;font-weight:500;color:var(--navy);">partners@bodhaayan.org</a></div>
+          </div>
+        </div>
+        <div style="margin-top:2rem;padding:1.4rem;background:var(--white);border-radius:12px;border-left:3px solid var(--sky);">
+          <h4 style="margin-bottom:.6rem;font-size:.9rem;">Quick notes by role</h4>
+          <p style="font-size:.84rem;margin-bottom:.5rem;"><strong>Students:</strong> Tell us your name, location, and what you are curious about.</p>
+          <p style="font-size:.84rem;margin:0;"><strong>Scientists:</strong> Share your domain, affiliation, and available time commitment.</p>
+        </div>
+      </div>
+
+      <!-- FORM — replace YOUR_FORM_ID with your Formspree form ID -->
+      <div class="reveal d2">
+        <div style="background:var(--white);border-radius:20px;padding:2.5rem;box-shadow:var(--sh-md);">
+          <h3 style="margin-bottom:1.6rem;">Send us a message</h3>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="[Bodhaayan] New Contact Message"/>
+            <input type="text"  name="_gotcha" style="display:none"/><!-- honeypot -->
+            <div class="g2" style="gap:1rem;">
+              <div class="fg"><label class="fl" for="c-name">Your Name *</label><input class="fc" id="c-name" name="name" type="text" placeholder="e.g. Priya Sharma" required/></div>
+              <div class="fg"><label class="fl" for="c-email">Email Address *</label><input class="fc" id="c-email" name="email" type="email" placeholder="you@example.com" required/></div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="c-role">I am a</label>
+              <select class="fc" id="c-role" name="role">
+                <option value="">Select your role…</option>
+                <option>Student</option>
+                <option>Scientist / Researcher</option>
+                <option>Educator / Teacher</option>
+                <option>Donor / Philanthropist</option>
+                <option>Institution / Organisation</option>
+                <option>Journalist / Media</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg"><label class="fl" for="c-sub">Subject</label><input class="fc" id="c-sub" name="subject" type="text" placeholder="e.g. Interested in becoming a mentor"/></div>
+            <div class="fg"><label class="fl" for="c-msg">Message *</label><textarea class="fc" id="c-msg" name="message" placeholder="Tell us how you'd like to engage with Bodhaayan…" required></textarea></div>
+            <button type="submit" class="btn btn-p btn-full">Send Message →</button>
+            <p style="font-size:.7rem;color:var(--g400);margin-top:.65rem;text-align:center;">Powered by Formspree · Your information is never shared.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-ph"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

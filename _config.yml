@@ -1,0 +1,17 @@
+# Bodhaayan — GitHub Pages Configuration
+# ─────────────────────────────────────────
+# This site is hosted via GitHub Pages.
+# Custom domain is managed via CNAME file + Spaceship DNS.
+
+title: Bodhaayan
+description: A Culture of Building Intellects — Grassroots Science Initiative
+url: "https://bodhaayan.org"
+
+# Optional: if hosting from a subdirectory
+# baseurl: ""
+
+# Exclude files from build
+exclude:
+  - README.md
+  - SETUP.md
+  - .gitignore

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Members — Bodhaayan</title>
+<meta name="description" content="Meet the advisors, scientific mentors, researchers, educators, and volunteers who make Bodhaayan's mission possible."/>
+<link rel="canonical" href="https://bodhaayan.org/members.html"/>
+<link rel="icon" href="assets/favicon.ico"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="nav-ph"></div>
+
+<!-- PAGE HERO -->
+<section class="ph">
+  <div class="ph-inner">
+    <span class="label" style="color:var(--accent);">Our Community</span>
+    <h1>Members</h1>
+    <p>The advisors, mentors, researchers, educators, and volunteers who power Bodhaayan's mission across India and beyond.</p>
+  </div>
+</section>
+
+<!-- MEMBERS SECTION -->
+<section class="bg-g">
+  <div class="wrap-lg">
+
+    <!-- Top bar: count + search -->
+    <div class="flex ac jb flex-wrap gap3" style="margin-bottom:2rem;" class="reveal">
+      <div>
+        <h2 style="font-size:1.5rem;margin-bottom:.2rem;">
+          <span id="memberCount">42</span> Members
+        </h2>
+        <p style="font-size:.84rem;margin:0;">Growing — <a href="involve.html" style="color:var(--sky);">join the community</a></p>
+      </div>
+      <div style="position:relative;max-width:280px;width:100%;">
+        <input id="memberSearch" type="search" placeholder="Search by name, role, or location…"
+          style="width:100%;padding:.7rem 1rem .7rem 2.6rem;border:1.5px solid var(--g200);border-radius:9px;font-family:var(--sans);font-size:.86rem;outline:none;transition:border-color .2s;"
+          onfocus="this.style.borderColor='var(--sky)'" onblur="this.style.borderColor='var(--g200)'"/>
+        <span style="position:absolute;left:.85rem;top:50%;transform:translateY(-50%);font-size:.9rem;pointer-events:none;">🔍</span>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div id="filterBar" class="filter-bar reveal"></div>
+
+    <!-- Members grid (populated by JS) -->
+    <div id="membersGrid" class="members-grid"></div>
+
+    <!-- Join CTA -->
+    <div style="margin-top:4rem;background:var(--white);border:1.5px dashed var(--g300);border-radius:20px;padding:2.5rem;text-align:center;" class="reveal">
+      <div style="font-size:2.2rem;margin-bottom:1rem;">🤝</div>
+      <h3 style="margin-bottom:.6rem;">Want to join as a Member?</h3>
+      <p style="max-width:480px;margin:0 auto .9rem;font-size:.92rem;">Whether you are a scientist, educator, researcher, or community volunteer — there is a place for you in the Bodhaayan community.</p>
+      <div class="flex gap3 jc flex-wrap" style="margin-top:1.4rem;">
+        <a href="involve.html"  class="btn btn-p">Get Involved →</a>
+        <a href="contact.html"  class="btn btn-o">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer-ph"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/members-data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
